@@ -8,7 +8,7 @@ import plotly.graph_objects as go
 st.markdown('''
 # Stock Price App
 
-- Source Code: 
+- Source Code: https://github.com/steven-ngo/Stock-Price-App
 - Language: `Python`
 - Libraries: `streamlit`,`yfinance`, `pandas`, `plotly`, and `datetime`
 ''')
