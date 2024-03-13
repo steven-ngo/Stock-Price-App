@@ -21,10 +21,10 @@ tickerSymbol = st.sidebar.selectbox('Stock ticker', ticker_list)
 tickerData = yf.Ticker(tickerSymbol)
 
 
-st.header('**'+ tickerData.info['longName']+ '**')
+# st.header('**'+ tickerData.info['longName']+ '**')
 
-string_summary = tickerData.info['longBusinessSummary']
-st.info(string_summary)
+# string_summary = tickerData.info['longBusinessSummary']
+# st.info(string_summary)
 
 
 
