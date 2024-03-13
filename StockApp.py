@@ -21,10 +21,10 @@ tickerSymbol = st.sidebar.selectbox('Stock ticker', ticker_list)
 tickerData = yf.Ticker(tickerSymbol)
 
 
-# st.header('**'+ tickerData.info['longName']+ '**')
+st.header('**'+ tickerData.info['longName']+ '**')
 
-# string_summary = tickerData.info['longBusinessSummary']
-# st.info(string_summary)
+string_summary = tickerData.info['longBusinessSummary']
+st.info(string_summary)
 
 
 
@@ -33,9 +33,7 @@ st.header('**Ticker data**')
 
 period = st.radio(
     'Time Range',
-    ['1d','5d','1mo','3mo','6mo','1y','2y','5y','ytd','max'], index=2)
-
-#, horizontal=True    
+    ['1d','5d','1mo','3mo','6mo','1y','2y','5y','ytd','max'], horizontal=True, index=2)
 
 
 tickerDf = tickerData.history(period=period)
